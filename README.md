@@ -2,9 +2,7 @@
 
 ¡Hola! 👋 Bienvenido/a a mi repositorio. Este proyecto contiene el código fuente de mi **CV Web**, diseñado con una estética moderna estilo *Dark Mode / Tech Neón*, enfocado en resaltar mi perfil como **Desarrolladora Junior de Aplicaciones Web y Software**.
 
-🌐 **[Ver mi CV en línea aquí](https://TU_USUARIO.github.io/TU_REPOSITORIO/)** *(Reemplaza este enlace con tu URL de GitHub Pages)*
-
----
+🌐 **[Ver mi CV en línea aquí](https://TU_USUARIO.github.io/TU_REPOSITORIO/)** 
 
 ## 🚀 Sobre Mí
 
@@ -38,7 +36,7 @@ En este CV destaco las siguientes habilidades tecnológicas:
 ```text
 .
 ├── index.html               # Estructura semántica del CV
-├── style.css                # Estilos personalizados (Dark Mode & Neón)
-├── tu-foto-profesional.jpg  # Fotografía de perfil optimizada
+├── estilo.css                # Estilos personalizados (Dark Mode & Neón)
+├── foto.jpg  # Fotografía de perfil optimizada
 ├── cv_jone_paniagua.pdf     # Versión descargable en formato PDF
 └── README.md                # Documentación del proyecto
