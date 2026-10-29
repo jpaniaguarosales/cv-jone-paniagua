@@ -1,0 +1,289 @@
+/* --- Variables con Estética Tech Dark --- */
+:root {
+    --bg-dark: #0f172a;         /* Azul/Gris extremadamente oscuro de fondo */
+    --card-bg: #1e293b;         /* Fondo para contenedores y tarjetería */
+    --sidebar-bg: #0b1120;      /* Lateral más profundo */
+    --accent-cyan: #06b6d4;     /* Cian neón principal */
+    --accent-violet: #8b5cf6;   /* Violeta neón para gradientes */
+    --text-primary: #f8fafc;    /* Texto principal muy claro */
+    --text-secondary: #94a3b8;  /* Texto secundario gris suavizado */
+    --border-color: #334155;    /* Bordes sutiles para separación */
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-code: 'Fira Code', monospace;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    background-color: var(--bg-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+/* --- Layout Principal --- */
+.cv-container {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* Ampliada la barra lateral */
+    min-height: 100vh;
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: var(--bg-dark);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    background-color: var(--sidebar-bg);
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid var(--border-color);
+}
+
+/* Foto de Perfil (Más grande y con efecto Neón) */
+.profile-photo-container {
+    width: 210px;               /* Foto más grande */
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 3px solid var(--accent-cyan);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4), 0 0 40px rgba(139, 92, 246, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-container:hover {
+    transform: scale(1.03);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-info h2, .languages h2 {
+    font-size: 1.1rem;
+    color: var(--accent-cyan);
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.contact-info ul, .languages ul {
+    width: 100%;
+}
+
+.contact-info li, .languages li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+}
+
+.contact-info i {
+    color: var(--accent-violet);
+    margin-right: 12px;
+    width: 18px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* --- Main Content --- */
+.main-content {
+    padding: 50px 60px;
+}
+
+.header-main {
+    margin-bottom: 45px;
+}
+
+.name {
+    font-weight: 300;
+    font-size: 2.8rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.surname {
+    font-weight: 800;
+    font-size: 3.4rem;
+    /* Gradiente Neón en el texto */
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.title {
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--font-code);
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-left: 4px solid var(--accent-cyan);
+    padding-left: 12px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.professional-profile p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+/* Formación Actual (Card Destacada Neón) */
+.current-formation .formation-item {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    gap: 25px;
+    border: 1px solid var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+}
+
+.current-formation .date {
+    font-family: var(--font-code);
+    font-weight: 700;
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.current-formation .details h3 {
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.current-formation .skills-highlight {
+    color: var(--accent-violet);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Badges de Habilidades Técnicas estilo Code/Tech */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-item {
+    background-color: var(--card-bg);
+    color: var(--accent-cyan);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: var(--font-code);
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.skill-item:hover {
+    border-color: var(--accent-cyan);
+    background-color: rgba(6, 182, 212, 0.1);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Experiencia Laboral y Educación */
+.experience-item, .education-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.date {
+    color: var(--accent-violet);
+    font-family: var(--font-code);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.details h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.details p {
+    margin: 2px 0;
+    color: var(--text-secondary);
+}
+
+.details .tasks {
+    color: var(--text-secondary);
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* --- Adaptabilidad (Responsive) --- */
+@media (max-width: 900px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .profile-photo-container {
+        width: 170px;
+        height: 170px;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .experience-item, .education-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
