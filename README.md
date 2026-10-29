@@ -2,7 +2,7 @@
 
 ¡Hola! 👋 Bienvenido/a a mi repositorio. Este proyecto contiene el código fuente de mi **CV Web**, diseñado con una estética moderna estilo *Dark Mode / Tech Neón*, enfocado en resaltar mi perfil como **Desarrolladora Junior de Aplicaciones Web y Software**.
 
-🌐 **[Ver mi CV en línea aquí](https://TU_USUARIO.github.io/TU_REPOSITORIO/)** 
+🌐 **[Ver mi CV en línea aquí]( https://jpaniaguarosales.github.io/cv-jone-paniagua/)** 
 
 ## 🚀 Sobre Mí
 
