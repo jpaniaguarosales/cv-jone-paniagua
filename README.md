@@ -8,7 +8,7 @@
 
 Soy estudiante de **Desarrollo de Aplicaciones Web (DAW)** apasionada por la programación Backend y Frontend. Me caracterizo por mi aprendizaje rápido, adaptabilidad, capacidad de resolución de problemas y actitud proactiva ante nuevos retos tecnológicos.
 
-Actualmente cuento con experiencia práctica en el desarrollo de **APIs REST con .NET y C#** obtenida durante mis prácticas profesionales en **Serikat**, así como conocimientos sólidos en **Java, SQL, HTML5 y CSS3**.
+Actualmente cuento con experiencia práctica en el desarrollo de **APIs REST con .NET y C#** obtenida durante mis prácticas profesionales en **Serikat**, así como conocimientos sólidos en **Java, JavaScript, PHP, SQL, HTML5 y CSS3**.
 
 ---
 
@@ -16,8 +16,8 @@ Actualmente cuento con experiencia práctica en el desarrollo de **APIs REST con
 
 En este CV destaco las siguientes habilidades tecnológicas:
 
-- **Backend:** C#, .NET, Java, SQL
-- **Frontend:** HTML5, CSS3 (Flexbox & CSS Grid, variables CSS, animaciones)
+- **Backend:** C#, .NET, Java, SQL, PHP, JavaScript
+- **Frontend:** HTML5, CSS3,  (Flexbox & CSS Grid, variables CSS, animaciones)
 - **Web & APIs:** API REST, JSON, HTTP/HTTPS
 - **Herramientas & Control de Versiones:** Git, GitHub
 
